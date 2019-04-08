@@ -1,7 +1,8 @@
 {
   "extends": [
     "tslint:latest",
-    "tslint-config-prettier"
+    "tslint-config-prettier",
+    "tslint-immutable"
   ],
   "rules": {
     "interface-name": [
@@ -9,13 +10,18 @@
       "never-prefix"
     ],
     "no-implicit-dependencies": [true, "dev"],
-    /* tslint-immutable rules */
+
     // Recommended built-in rules
     "no-var-keyword": true,
     "no-parameter-reassignment": true,
     "typedef": [
       true,
       "call-signature"
-    ]
+    ],
+
+    // tslint-immutable
+    "readonly-keyword": true,
+    "no-let": true,
+    "no-object-mutation": true
   }
 }
