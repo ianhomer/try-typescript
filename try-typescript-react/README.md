@@ -12,7 +12,3 @@
 ## run
  
     open index.html
-    
-# thanks to
-
-* https://www.typescriptlang.org/docs/handbook/react-&-webpack.html
