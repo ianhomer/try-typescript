@@ -25,13 +25,7 @@ class App {
                 message: 'Hello World!'
             })
         });
-
-        router.post('/', (req: Request, res: Response) => {
-            const data = req.body;
-            // query a database and save data
-            res.status(200).send(data);
-        });
-
+        
         this.app.use('/', router)
 
     }
