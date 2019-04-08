@@ -1,9 +1,9 @@
-# TL;DR
+# tl;dr
 
-## Prepare
+## prepare
 
     npm install -g typescript
 
-## Build
+## build
 
     tsc greeter.ts

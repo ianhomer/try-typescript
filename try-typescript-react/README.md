@@ -1,15 +1,15 @@
-# TL;DR
+# tl;dr
 
-## Prepare
+## prepare
 
     npm install -g webpack
     npm i -g webpack-cli 
 
-## Build
+## build
 
     webpack
 
-## Run
+## run
  
     open index.html
     
