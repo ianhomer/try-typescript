@@ -10,8 +10,12 @@
 
 ## test
 
-    http http://localhost:4040/
+    npm test
+    
+Manual
 
+    http http://localhost:4040/
+    
 # debug
 
 Set break point in ts code and IntelliJ -> Run -> Debug 'local.ts'.
