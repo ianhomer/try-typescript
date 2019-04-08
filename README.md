@@ -1,1 +1,2 @@
-# try-typescript
+# Try TypeScript
+
