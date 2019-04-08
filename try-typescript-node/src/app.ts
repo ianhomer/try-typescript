@@ -1,5 +1,5 @@
-import express from 'express';
-import bodyParser from "body-parser";
+import express = require('express');
+import * as bodyParser from "body-parser";
 import { Request, Response } from "express";
 
 class App {
