@@ -1,16 +1,21 @@
 # tl;dr
 
-## build
+## run
 
-    npm run dev
-
-or 
-
-    npm run prod   
+    npm start
 
 ## test
 
     http http://localhost:4040/
+
+# build
+
+    npm run build
+
+and run local build
+
+    npm run local
+    
     
 # thanks to
 
