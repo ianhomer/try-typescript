@@ -1,11 +1,14 @@
-export enum Color {Red, Green}
+export enum Color {
+  Red,
+  Green
+}
 
 export class Types {
-    isOk: boolean = true;
-    age: number = 42;
-    ageString: string = `age is ${this.age}`;
-    list: number[] = [1, 2, 3];
-    tuple: [string, number] = ['ok', 1];
-    hair: Color = Color.Red;
-    eyes: Color = Color.Green;
+  public readonly isOk: boolean = true;
+  public readonly age: number = 42;
+  public readonly ageString: string = `age is ${this.age}`;
+  public readonly list: number[] = [1, 2, 3];
+  public readonly tuple: [string, number] = ['ok', 1];
+  public readonly hair: Color = Color.Red;
+  public readonly eyes: Color = Color.Green;
 }

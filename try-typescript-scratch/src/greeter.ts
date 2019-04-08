@@ -1,12 +1,12 @@
 interface Person {
-    firstName: string;
-    lastName: string;
+  readonly firstName: string;
+  readonly lastName: string;
 }
 
-function greeter(person: Person) {
-    return "Hello, " + person.firstName + " " + person.lastName;
+function greeter(person: Person): string {
+  return 'Hello, ' + person.firstName + ' ' + person.lastName;
 }
 
-let user = { firstName: "Jane", lastName: "User" };
+const user = { firstName: 'Jane', lastName: 'User' };
 
 document.body.innerHTML = greeter(user);
