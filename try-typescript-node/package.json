@@ -15,7 +15,14 @@
     "ts-node-dev": "^1.0.0-pre.32",
     "typescript": "^3.4.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.1",
+    "supertest": "^4.0.2",
+    "ts-node": "^8.0.3"
+  },
   "scripts": {
     "start": "ts-node-dev --respawn --transpileOnly ./src/local.ts",
     "build": "tsc",
