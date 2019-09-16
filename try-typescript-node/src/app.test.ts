@@ -1,5 +1,4 @@
 import { expect } from 'chai';
-import 'mocha';
 const request = require('supertest');
 
 import app from "./app";
@@ -7,7 +6,7 @@ import app from "./app";
 describe('Hello', function() {
     describe('#GET / hello', function() {
         it('should get hello', function(done) {
-            request(app) .get('/')
+            request(app).get('/')
                 .end(function(err: any, response: { statusCode: any; body: any; }) {
                     expect(response.statusCode).to.equal(200);
                     expect(response.body).to.be.an('object');
