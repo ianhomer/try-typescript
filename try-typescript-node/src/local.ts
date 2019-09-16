@@ -1,2 +1,2 @@
-require('dotenv').config({ path: require('find-config')('.env') });
-require('./server');
+require("dotenv").config({ path: require("find-config")(".env") });
+require("./server");
