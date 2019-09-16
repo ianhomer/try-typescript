@@ -34,11 +34,12 @@
     "ts-node-dev": "^1.0.0-pre.42"
   },
   "scripts": {
-    "start": "ts-node-dev --respawn --transpileOnly ./src/index.ts",
     "build": "tsc",
     "format": "prettier --write 'src/**/*.{ts}'",
     "lint": "eslint --ext ts,tsx ./src",
     "lint:fix": "eslint --ext ts,tsx ./src --fix",
+    "start:dist": "node ./dist/index.js",
+    "start": "ts-node-dev --respawn --transpileOnly ./src/index.ts",
     "test": "jest",
     "tsc": "tsc"
   },

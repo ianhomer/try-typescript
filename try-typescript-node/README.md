@@ -1,18 +1,10 @@
 # tl;dr
 
-## prepare
-
     cp .env.example .env
-    
-## run
-
     npm start
-
-## test
-
     npm test
     
-Manual
+Visit
 
     http http://localhost:4040/
     
@@ -20,10 +12,14 @@ Manual
 
 Set break point in ts code and IntelliJ -> Run -> Debug 'local.ts'.
 
+# lint
+
+    npm run lint:fix
+    
 # build
 
     npm run build
 
 and run local build
 
-    npm run local
+    npm run start:dist
