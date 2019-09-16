@@ -1,6 +1,6 @@
 import express = require("express");
 import * as bodyParser from "body-parser";
-import { Request, Response } from "express";
+import {Request, Response} from "express";
 
 class App {
   constructor() {
@@ -30,3 +30,4 @@ class App {
 }
 
 export default new App().app;
+
