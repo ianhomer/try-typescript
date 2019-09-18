@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "cross-env CI=true react-scripts test --ci"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/jest": "^24.0.18",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "react": "^16.9.0",
@@ -17,6 +18,8 @@
     "react-scripts": "3.1.1"
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
+    "enzyme": "latest",
     "typescript": "^3.6.3"
   }
 }
