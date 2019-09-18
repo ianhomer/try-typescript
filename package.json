@@ -8,6 +8,8 @@
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "clean": "lerna clean",
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint:fix",
     "test": "lerna run test"
   }
 }
