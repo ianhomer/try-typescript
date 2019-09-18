@@ -4,7 +4,6 @@
   "description": "Try TypeScript with React",
   "main": "index.js",
   "scripts": {
-    "build": "react-scripts build",
     "test": "cross-env CI=true react-scripts test --ci"
   },
   "author": "",

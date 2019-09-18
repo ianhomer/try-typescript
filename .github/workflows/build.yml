@@ -1,4 +1,4 @@
-name: Node CI
+name: Build
 
 on: [push]
 
@@ -20,7 +20,8 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install
-        npm run build
+        npm run bootstrap
         npm test
+        npm run build
       env:
         CI: true
