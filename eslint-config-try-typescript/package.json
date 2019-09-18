@@ -1,11 +1,8 @@
 {
-  "name": "try-typescript-lint",
+  "name": "@try-typescript/eslint-config-try-typescript",
   "version": "1.0.0",
-  "description": "linting",
-  "main": "src/index.ts",
-  "directories": {
-    "lib": "src"
-  },
+  "description": "shared linting",
+  "main": "index.js",
   "dependencies": {
     "typescript": "^3.6.3"
   },
@@ -18,10 +15,14 @@
     "eslint-plugin-react": "^7.14.3",
     "prettier": "^1.18.2"
   },
-  "scripts": {
-    "format": "prettier --write 'src/**/*.{ts}'",
-    "lint": "eslint --ext ts,tsx ./src",
-    "lint:fix": "eslint --ext ts,tsx ./src --fix"
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">=2",
+    "@typescript-eslint/parser": ">=2",
+    "eslint": ">= 6",
+    "eslint-config-prettier": ">= 6",
+    "eslint-plugin-prettier": ">=3",
+    "eslint-plugin-react": ">7",
+    "prettier": ">1"
   },
   "keywords": [],
   "author": "",
