@@ -4,7 +4,8 @@
   "description": "Try TypeScript with React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "react-scripts build",
+    "test": "react-scripts test"
   },
   "author": "",
   "license": "ISC",
@@ -12,13 +13,10 @@
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.1"
   },
   "devDependencies": {
-    "awesome-typescript-loader": "^5.2.1",
-    "source-map-loader": "^0.2.4",
-    "typescript": "^3.6.3",
-    "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.9"
+    "typescript": "^3.6.3"
   }
 }
