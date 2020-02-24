@@ -1,4 +1,3 @@
-import { expect } from "chai";
 import request from "supertest";
 import { Response } from "supertest";
 
@@ -10,9 +9,9 @@ describe("Hello", () => {
       request(app)
         .get("/")
         .end((err: string, response: Response) => {
-          expect(response.status).to.equal(200);
-          expect(response.body).to.be.an("object");
-          expect(response.body.message).to.equal("Hello World!");
+          expect(response.status).toEqual(200);
+          expect(typeof(response.body)).toEqual("object");
+          expect(response.body.message).toEqual("Hello World!");
           done();
         });
     });
