@@ -1,5 +1,4 @@
 {
-  "hoist": "{eslint*}",
   "packages": [
     "*"
   ],
