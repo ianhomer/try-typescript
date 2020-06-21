@@ -15,7 +15,7 @@ jobs:
         node-version: [12.x]
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
@@ -24,9 +24,13 @@ jobs:
       run: |
         npm install
         npm run update
+        npm install
+        npm run bootstrap
       env:
         CI: false
     - name: commit update
       run: |
+        git config --local user.email "auto@purplepip.com"
+        git config --local user.name "Purple Pip Robot"
         git commit -m "Auto-update"
-        git push github HEAD:master
+        git push
