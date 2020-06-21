@@ -12,6 +12,6 @@
     "lint": "lerna run lint",
     "lint:fix": "lerna run lint:fix",
     "test": "lerna run test",
-    "update": "lerna exec -- npx npm-check-updates -u && lerna bootstrap"
+    "update": "lerna exec -- npx npm-check-updates -u && lerna bootstrap --no-ci"
   }
 }
