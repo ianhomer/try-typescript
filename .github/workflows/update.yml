@@ -34,5 +34,6 @@ jobs:
         git commit -am "Auto-update"
         git push
     - name: test
+      run: |
         npm test
         npm run build
