@@ -1,6 +1,7 @@
 name: Update
 
 on:
+  push:
   schedule: 
     - cron: 0 0 * * 1
 
@@ -23,3 +24,7 @@ jobs:
       run: |
         npm install
         npm run update
+    - name: commit update
+      run: |
+        git commit -m "Auto-update"
+        git push github HEAD:master
