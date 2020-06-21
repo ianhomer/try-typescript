@@ -9,16 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/jest": "^25.1.4",
-    "@types/react": "^16.9.23",
-    "@types/react-dom": "^16.9.5",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-scripts": "^3.4.0"
+    "@types/jest": "^26.0.0",
+    "@types/react": "^16.9.38",
+    "@types/react-dom": "^16.9.8",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
     "enzyme": "latest",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.5"
   }
 }
