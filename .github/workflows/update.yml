@@ -6,7 +6,7 @@ on:
     - cron: 0 0 * * 1
 
 jobs:
-  build:
+  update:
 
     runs-on: ubuntu-latest
 
@@ -24,6 +24,8 @@ jobs:
       run: |
         npm install
         npm run update
+      env:
+        CI: false
     - name: commit update
       run: |
         git commit -m "Auto-update"
