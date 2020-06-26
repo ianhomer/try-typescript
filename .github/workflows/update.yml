@@ -1,7 +1,7 @@
 name: Update
 
 on:
-  pull:
+  push:
   schedule: 
     - cron: 0 0 * * 1
 
