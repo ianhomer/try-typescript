@@ -24,8 +24,8 @@ jobs:
       run: |
         npm install
         npm run update
-        npm install
-        npm run bootstrap
+        npm install --no-ci
+        npm run bootstrap --no-ci
         npm test
         npm run build
       env:
