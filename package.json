@@ -11,7 +11,7 @@
     "lint": "lerna run lint",
     "lint:fix": "lerna run lint:fix",
     "test": "lerna run test",
-    "update": "npx npm-check-updates && npx lerna exec -- npx npm-check-updates",
+    "update": "npx npm-check-updates -u -l info && npx lerna exec -- npx npm-check-updates -u -l info",
     "update:package-locks": "lerna exec 'npm install --package-lock-only'"
   }
 }
