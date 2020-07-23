@@ -32,6 +32,6 @@ jobs:
         if ! git diff --quiet --exit-code ; then
           git config --local user.email "auto@purplepip.com"
           git config --local user.name "Purple Pip Robot"
-          git commit -am "Auto-update"
+          git commit -m "Auto-update"
           git push
         fi
