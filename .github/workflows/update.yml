@@ -25,6 +25,8 @@ jobs:
         npm install
         npm run update
         npm run update:package-locks
+        npm test
+        npm run build
       env:
         CI: false
     - name: commit update
