@@ -21,6 +21,7 @@ jobs:
         npm install
         npm run update
         npm run update:package-locks
+        npm run bootstrap
         npm test
         npm run build
       env:
