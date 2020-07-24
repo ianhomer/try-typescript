@@ -13,6 +13,6 @@
     "lint:fix": "lerna run lint:fix",
     "test": "lerna run test",
     "update": "npx npm-check-updates -u && npx lerna exec -- npx npm-check-updates -u",
-    "update:package-locks": "lerna clean --yes && lerna exec \"npm install --package-lock-only --no-audit\""
+    "update:package-locks": "lerna clean --yes && lerna bootstrap -- --package-lock-only --no-audit\""
   }
 }
