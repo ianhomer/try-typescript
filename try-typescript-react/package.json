@@ -4,21 +4,21 @@
   "description": "Try TypeScript with React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cross-env CI=true react-scripts test --ci"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/react": "^16.8.13",
-    "@types/react-dom": "^16.8.3",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@types/jest": "^26.0.6",
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
   },
   "devDependencies": {
-    "awesome-typescript-loader": "^5.2.1",
-    "source-map-loader": "^0.2.4",
-    "typescript": "^3.4.2",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0"
+    "cross-env": "^7.0.2",
+    "enzyme": "latest",
+    "typescript": "^3.9.7"
   }
 }
