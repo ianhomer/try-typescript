@@ -28,7 +28,7 @@ jobs:
         npm test
         npm run build
       env:
-        CI: false
+        CI: ""
     - name: commit update
       run: |
         if ! git diff --quiet --exit-code ; then
