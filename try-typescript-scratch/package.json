@@ -1,38 +1,36 @@
 {
   "name": "try-typescript-scratch",
   "version": "1.0.0",
-  "description": "## prepare",
-  "main": "index.js",
+  "description": "Type Typescript scratch pad",
+  "main": "src/index.ts",
   "scripts": {
     "build": "run-s clean && run-p build:*",
     "build:main": "tsc -p tsconfig.json",
     "clean": "trash build test",
-    "fix": "run-s fix:*",
-    "fix:prettier": "prettier \"src/**/*.ts\" --write",
-    "fix:tslint": "tslint --fix --project .",
+    "lint": "eslint --ext ts,tsx ./src",
+    "lint:fix": "eslint --ext ts,tsx ./src --fix",
+    "lint:prettier": "prettier \"src/**/*.ts\" --write",
     "test": "mocha -r ts-node/register ./**/*.spec.ts"
   },
   "scripts-info": {
     "info": "Display information about the package scripts",
-    "fix": "Try to automatically fix any linting problems",
-    "test": "Lint and unit test the project"
+    "lint:fix": "Try to automatically fix any linting problems",
+    "test": "Unit test the project"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/chai": "^4.1.7",
-    "@types/mocha": "^5.2.6",
+    "@try-typescript/eslint-config-try-typescript": "1.0.0",
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.0",
     "chai": "^4.2.0",
-    "mocha": "^6.1.2",
+    "minimist": ">=1.2.5",
+    "mocha": "^8.0.1",
     "npm-run-all": "^4.1.5",
-    "prettier": "^1.15.2",
-    "trash-cli": "^1.4.0",
-    "ts-node": "^8.0.3",
-    "tslint": "^5.11.0",
-    "tslint-config-prettier": "^1.17.0",
-    "tslint-immutable": "^5.0.0",
-    "typescript": "^3.4.2"
+    "trash-cli": "^3.0.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
   },
   "prettier": {
     "singleQuote": true
