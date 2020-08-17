@@ -15,16 +15,16 @@
   },
   "devDependencies": {
     "@try-typescript/eslint-config-try-typescript": "1.0.0",
-    "@types/jest": "^26.0.9",
-    "acorn": ">=7.4.0",
+    "@types/jest": "^26.0.10",
+    "acorn": ">=8.0.1",
     "minimist": ">=1.2.5",
     "dotenv": "^8.2.0",
     "find-config": "^1.0.0",
-    "jest": "26.2.2",
+    "jest": "26.4.0",
     "supertest": "^4.0.2",
-    "ts-jest": "^26.1.4",
+    "ts-jest": "^26.2.0",
     "ts-node": "^8.10.2",
-    "ts-node-dev": "^1.0.0-pre.56"
+    "ts-node-dev": "^1.0.0-pre.57"
   },
   "scripts": {
     "build": "tsc",
