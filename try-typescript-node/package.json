@@ -22,9 +22,9 @@
     "find-config": "^1.0.0",
     "jest": "26.4.2",
     "supertest": "^4.0.2",
-    "ts-jest": "^26.2.0",
+    "ts-jest": "^26.3.0",
     "ts-node": "^9.0.0",
-    "ts-node-dev": "^1.0.0-pre.60"
+    "ts-node-dev": "^1.0.0-pre.61"
   },
   "scripts": {
     "build": "tsc",
