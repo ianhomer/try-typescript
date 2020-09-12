@@ -2,15 +2,17 @@
   "name": "root",
   "devDependencies": {
     "lerna": "^3.22.1",
+    "lodash": "^4.17.20",
     "minimist": ">=1.2.5"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
+    "bootstrap:no-ci": "lerna bootstrap --no-ci",
     "build": "lerna run build",
     "clean": "lerna clean",
     "lint": "lerna run lint",
     "lint:fix": "lerna run lint:fix",
     "test": "lerna run test",
-    "update": "npx npm-check-updates -u && lerna exec -- npx npm-check-updates -u"
+    "update": "npx npm-check-updates -u && npx lerna exec -- npx npm-check-updates -u && lerna clean --yes && lerna bootstrap -- --package-lock-only --no-audit"
   }
 }
