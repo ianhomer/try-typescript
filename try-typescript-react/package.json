@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/jest": "^26.0.13",
+    "@types/jest": "^26.0.14",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "react": "^16.13.1",
@@ -19,6 +19,6 @@
   "devDependencies": {
     "cross-env": "^7.0.2",
     "enzyme": "latest",
-    "typescript": "^4.0.2"
+    "typescript": "^4.0.3"
   }
 }
