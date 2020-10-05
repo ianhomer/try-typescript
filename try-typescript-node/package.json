@@ -16,13 +16,13 @@
   "devDependencies": {
     "@try-typescript/eslint-config-try-typescript": "1.0.0",
     "@types/jest": "^26.0.14",
-    "acorn": ">=8.0.1",
+    "acorn": ">=8.0.3",
     "minimist": ">=1.2.5",
     "dotenv": "^8.2.0",
     "find-config": "^1.0.0",
     "jest": "26.4.2",
     "supertest": "^5.0.0",
-    "ts-jest": "^26.4.0",
+    "ts-jest": "^26.4.1",
     "ts-node": "^9.0.0",
     "ts-node-dev": "^1.0.0-pre.63"
   },
