@@ -24,13 +24,13 @@
     "@try-typescript/eslint-config-try-typescript": "1.0.0",
     "@types/chai": "^4.2.15",
     "@types/mocha": "^8.2.1",
-    "chai": "^4.3.0",
+    "chai": "^4.3.3",
     "minimist": ">=1.2.5",
-    "mocha": "^8.3.0",
+    "mocha": "^8.3.1",
     "npm-run-all": "^4.1.5",
     "trash-cli": "^4.0.0",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.2"
+    "typescript": "^4.2.3"
   },
   "prettier": {
     "singleQuote": true

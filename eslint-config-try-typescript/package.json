@@ -4,7 +4,7 @@
   "description": "shared linting",
   "main": "index.js",
   "dependencies": {
-    "typescript": "^4.2.2"
+    "typescript": "^4.2.3"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.4.0",
