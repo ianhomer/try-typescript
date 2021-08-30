@@ -19,6 +19,6 @@
   "devDependencies": {
     "cross-env": "^7.0.3",
     "enzyme": "latest",
-    "typescript": "^4.3.5"
+    "typescript": "^4.4.2"
   }
 }
