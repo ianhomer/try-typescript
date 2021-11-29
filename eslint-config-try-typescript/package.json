@@ -14,7 +14,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
     "minimist": ">=1.2.5",
-    "prettier": "^2.4.1"
+    "prettier": "^2.5.0"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=5",
