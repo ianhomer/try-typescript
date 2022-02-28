@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@try-typescript/eslint-config-try-typescript": "1.0.0",
-    "@types/jest": "^27.4.0",
+    "@types/jest": "^27.4.1",
     "acorn": ">=8.7.0",
     "minimist": ">=1.2.5",
     "dotenv": "^16.0.0",
