@@ -17,11 +17,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2.0.1
+      with:
+        version: 6.32.1
+    - name: install, build, and test
       run: |
-        npm install
-        npm run bootstrap
-        npm test
-        npm run build
-      env:
-        CI: true
+        pnpm install
+        pnpm run bootstrap
+        pnpm test
+        pnpm run build
