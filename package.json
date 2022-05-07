@@ -1,6 +1,7 @@
 {
   "name": "root",
   "devDependencies": {
+    "@types/node": "^17.0.31",
     "lerna": "^4.0.0",
     "lodash": "^4.17.21",
     "minimist": ">=1.2.5"
