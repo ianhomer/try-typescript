@@ -6,13 +6,9 @@
     "minimist": ">=1.2.5"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "bootstrap:no-ci": "lerna bootstrap --no-ci",
-    "build": "lerna run build",
-    "clean": "lerna clean",
-    "lint": "lerna run lint",
-    "lint:fix": "lerna run lint:fix",
-    "test": "lerna run test",
-    "update": "npx npm-check-updates -u && npx lerna exec -- npx npm-check-updates -u && lerna clean --yes && lerna bootstrap -- --package-lock-only --no-audit"
+    "build": "pnpm --filter {packages/**} build",
+    "lint": "pnpm --filter {packages/**} lint",
+    "lint:fix": "pnpm --filter {packages/**} lint:fix",
+    "test": "pnpm --filter {packages/**} test"
   }
 }

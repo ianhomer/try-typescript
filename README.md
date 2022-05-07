@@ -2,10 +2,10 @@
 
 ## tl;dr
 
-    npm install
-    npm run bootstrap
-    npm run build
-    npm test
+    pnpm install
+    pnpm run bootstrap
+    pnpm run build
+    pnpm test
 
 ## thanks to
 
