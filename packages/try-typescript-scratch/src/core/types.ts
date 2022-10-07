@@ -13,12 +13,26 @@ export class Types {
   public readonly eyes: Color = Color.Green;
 }
 
-export class Box {
+export interface OneDimensional {
   width: number;
+}
+
+export interface TwoDimensional extends OneDimensional {
+  length: number;
+}
+
+export interface ThreeDimensional extends TwoDimensional {
+  height: number;
+}
+
+export class Box implements ThreeDimensional {
+  width: number;
+  length: number;
   height: number;
 
-  constructor(width = 10, height = 20) {
+  constructor(width = 10, length = 15, height = 20) {
     this.width = width;
+    this.length = length;
     this.height = height;
   }
 }

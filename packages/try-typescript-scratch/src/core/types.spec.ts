@@ -23,7 +23,7 @@ describe('Types', () => {
   });
 
   it('fake box is not instance of Box', () => {
-    const box: Box = { width: 10, height: 20 };
+    const box: Box = { width: 10, length: 15, height: 20 };
     expect(box instanceof Box).to.be.false;
   });
 
