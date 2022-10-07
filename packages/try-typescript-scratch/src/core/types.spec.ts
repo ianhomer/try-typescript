@@ -2,7 +2,7 @@ import 'mocha';
 
 import { expect } from 'chai';
 
-import { Box, Color, Types } from './types';
+import { Box, CardboardBox, Color, Types } from './types';
 
 describe('Types', () => {
   it('should have types set', () => {
@@ -17,8 +17,18 @@ describe('Types', () => {
     expect(types.eyes).to.equal(Color.Green);
   });
 
-  it('should be instanceof', () => {
+  it('constructed box is instanceof Box', () => {
     const box: Box = new Box();
+    expect(box instanceof Box).to.be.true;
+  });
+
+  it('fake box is not instance of Box', () => {
+    const box: Box = { width: 10, height: 20 };
+    expect(box instanceof Box).to.be.false;
+  });
+
+  it('cardboard box is instanceof Box', () => {
+    const box: Box = new CardboardBox();
     expect(box instanceof Box).to.be.true;
   });
 });

@@ -22,3 +22,5 @@ export class Box {
     this.height = height;
   }
 }
+
+export class CardboardBox extends Box {}
