@@ -1,6 +1,6 @@
 export enum Color {
   Red,
-  Green
+  Green,
 }
 
 export class Types {

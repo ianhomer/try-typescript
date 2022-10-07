@@ -4,7 +4,6 @@ on: [push, workflow_dispatch]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -12,17 +11,17 @@ jobs:
         node-version: [18.x]
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install pnpm
-      uses: pnpm/action-setup@v2.0.1
-      with:
-        version: 6.32.1
-    - name: install, build, and test
-      run: |
-        pnpm install
-        pnpm test
-        pnpm run build
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.32.1
+      - name: install, build, and test
+        run: |
+          pnpm install
+          pnpm test
+          pnpm run build

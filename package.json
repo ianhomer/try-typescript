@@ -1,14 +1,30 @@
 {
   "name": "root",
-  "devDependencies": {
-    "@types/node": "^18.8.3",
-    "lodash": "^4.17.21",
-    "minimist": "^1.2.6"
-  },
   "scripts": {
     "build": "pnpm --filter {packages/**} build",
-    "lint": "pnpm --filter {packages/**} lint",
-    "lint:fix": "pnpm --filter {packages/**} lint:fix",
+    "eslint": "eslint packages --ext .ts --ext .tsx",
+    "eslint:fix": "eslint packages --ext .ts --ext .tsx --fix",
+    "lint": "pnpm run prettier && pnpm run eslint",
+    "lint:fix": "pnpm run package:fix && pnpm run prettier:fix && pnpm run eslint:fix",
+    "package:fix": "format-package -w",
+    "pre-commit": "lint-staged --quiet",
+    "prepare": "husky install",
+    "prettier": "pnpx prettier --check .",
+    "prettier:fix": "pnpx prettier --write .",
     "test": "pnpm --filter {packages/**} test"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.3",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "format-package": "^7.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.6"
   }
 }

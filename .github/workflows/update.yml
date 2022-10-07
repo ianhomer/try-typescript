@@ -2,36 +2,35 @@ name: update
 
 on:
   schedule:
-  - cron: 0 0 * * 1
+    - cron: 0 0 * * 1
   workflow_dispatch:
 
 jobs:
   update:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: 18.x
-    - name: Install pnpm
-      uses: pnpm/action-setup@v2.0.1
-      with:
-        version: 6.32.1
-    - name: install, build
-      run: |
-        pnpm install
-        pnpm run update
-        pnpm run bootstrap
-        pnpm test
-        pnpm run build
-    - name: commit update
-      run: |
-        if ! git diff --quiet --exit-code ; then
-          git config --local user.email "auto@purplepip.com"
-          git config --local user.name "Purple Pip Robot"
-          git commit -am "Auto-update"
-          git push
-        fi
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18.x
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.32.1
+      - name: install, build
+        run: |
+          pnpm install
+          pnpm run update
+          pnpm run bootstrap
+          pnpm test
+          pnpm run build
+      - name: commit update
+        run: |
+          if ! git diff --quiet --exit-code ; then
+            git config --local user.email "auto@purplepip.com"
+            git config --local user.name "Purple Pip Robot"
+            git commit -am "Auto-update"
+            git push
+          fi

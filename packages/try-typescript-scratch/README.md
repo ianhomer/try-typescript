@@ -7,4 +7,3 @@
 ## lint fix
 
     npm run fix
-

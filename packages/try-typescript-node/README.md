@@ -23,4 +23,3 @@ Set break point in ts code and IntelliJ -> Run -> Debug 'local.ts'.
 and run local build
 
     npm run start:dist
-

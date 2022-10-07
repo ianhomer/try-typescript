@@ -2,12 +2,12 @@
   "name": "try-typescript-react",
   "version": "1.0.0",
   "description": "Try TypeScript with React",
+  "license": "ISC",
+  "author": "",
   "main": "index.js",
   "scripts": {
     "test": "cross-env CI=true react-scripts test --ci"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@types/jest": "^29.1.2",
     "@types/react": "^18.0.21",
