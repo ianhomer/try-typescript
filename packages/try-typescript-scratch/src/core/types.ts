@@ -12,3 +12,13 @@ export class Types {
   public readonly hair: Color = Color.Red;
   public readonly eyes: Color = Color.Green;
 }
+
+export class Box {
+  width: number;
+  height: number;
+
+  constructor(width = 10, height = 20) {
+    this.width = width;
+    this.height = height;
+  }
+}

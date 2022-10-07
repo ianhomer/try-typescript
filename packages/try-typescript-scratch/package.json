@@ -10,17 +10,13 @@
     "build": "run-s clean && run-p build:*",
     "build:main": "tsc -p tsconfig.json",
     "clean": "trash build test",
-    "lint": "eslint --ext ts,tsx ./src",
-    "lint:fix": "eslint --ext ts,tsx ./src --fix",
-    "lint:prettier": "prettier \"src/**/*.ts\" --write",
-    "test": "mocha -r ts-node/register ./**/*.spec.ts"
+    "test": "mocha -r ts-node/register ./src/{,**}/*.spec.ts"
   },
   "prettier": {
     "singleQuote": true
   },
   "scripts-info": {
     "info": "Display information about the package scripts",
-    "lint:fix": "Try to automatically fix any linting problems",
     "test": "Unit test the project"
   },
   "devDependencies": {

@@ -2,7 +2,7 @@ import 'mocha';
 
 import { expect } from 'chai';
 
-import { Color, Types } from './types';
+import { Box, Color, Types } from './types';
 
 describe('Types', () => {
   it('should have types set', () => {
@@ -15,5 +15,10 @@ describe('Types', () => {
     expect(types.tuple[1]).to.equal(1);
     expect(types.hair).to.equal(Color.Red);
     expect(types.eyes).to.equal(Color.Green);
+  });
+
+  it('should be instanceof', () => {
+    const box: Box = new Box();
+    expect(box instanceof Box).to.be.true;
   });
 });
