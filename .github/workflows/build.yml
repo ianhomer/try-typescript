@@ -20,8 +20,9 @@ jobs:
         uses: pnpm/action-setup@v2.0.1
         with:
           version: 6.32.1
-      - name: install, build, and test
-        run: |
-          pnpm install
-          pnpm test
-          pnpm run build
+      - name: install
+        run: pnpm install
+      - name: build
+        run: pnpm run build
+      - name: test
+        run: pnpm test
