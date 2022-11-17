@@ -15,6 +15,8 @@ describe('Types', () => {
     expect(types.tuple[1]).to.equal(1);
     expect(types.hair).to.equal(Color.Red);
     expect(types.eyes).to.equal(Color.Green);
+    expect(types.stringOrNumber).to.equal('foo');
+    expect(types.phoneAndEmail.email).to.equals('foo@test.com');
   });
 
   it('constructed box is instanceof Box', () => {

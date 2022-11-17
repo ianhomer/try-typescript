@@ -3,6 +3,17 @@ export enum Color {
   Green,
 }
 
+type UnionOfStringOrNumber = string | number;
+
+type Phone = {
+  number: string;
+};
+
+type Email = {
+  email: string;
+};
+type IntersectionOfEmailAndPhone = Email & Phone;
+
 export class Types {
   public readonly isOk: boolean = true;
   public readonly age: number = 42;
@@ -11,6 +22,11 @@ export class Types {
   public readonly tuple: [string, number] = ['ok', 1];
   public readonly hair: Color = Color.Red;
   public readonly eyes: Color = Color.Green;
+  public readonly stringOrNumber: UnionOfStringOrNumber = 'foo';
+  public readonly phoneAndEmail: IntersectionOfEmailAndPhone = {
+    number: '01234 567 890',
+    email: 'foo@test.com',
+  };
 }
 
 export interface OneDimensional {
