@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.2",
+    "@types/find-config": "^1.0.1",
     "@types/jest": "^29.2.3",
     "acorn": "^8.8.1",
     "dotenv": "^16.0.3",
