@@ -11,7 +11,8 @@
     "prepare": "husky install",
     "prettier": "pnpx prettier --check .",
     "prettier:fix": "pnpx prettier --write .",
-    "test": "pnpm --filter {packages/**} test"
+    "test": "pnpm --filter {packages/**} test",
+    "update": "pnpm update -rL"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
