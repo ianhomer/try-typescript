@@ -5,6 +5,7 @@
   "license": "BSD",
   "scripts": {
     "build": "pnpm --filter {packages/**} build",
+    "clean": "pnpm --filter {packages/**} clean",
     "eslint": "eslint packages --ext .ts --ext .tsx",
     "eslint:fix": "eslint packages --ext .ts --ext .tsx --fix",
     "lint": "pnpm run prettier && pnpm run eslint",
