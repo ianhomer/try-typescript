@@ -23,7 +23,6 @@ jobs:
         run: |
           pnpm install
           pnpm run update
-          pnpm run bootstrap
           pnpm test
           pnpm run build
       - name: commit update
