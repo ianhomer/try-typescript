@@ -4,7 +4,9 @@
     "target": "es6",
     "module": "CommonJS",
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true
   },
   "include": ["src/**/*.ts"]
 }
