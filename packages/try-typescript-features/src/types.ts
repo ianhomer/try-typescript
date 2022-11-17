@@ -1,3 +1,5 @@
+import assert = require("node:assert");
+
 type Varierty = string | number | Date;
 
 enum Status {
@@ -8,18 +10,30 @@ enum Status {
 
 type Color = "red" | "blue" | "yellow";
 
+interface Song {
+  name: string;
+  length: number;
+  date: Date;
+}
+
+type SongField = keyof Song;
+
 export default () => {
   console.log("running types");
   const x: Varierty = "foo";
   const y: Varierty = 123;
 
-  console.log(`${x} : ${y}`);
+  assert(x === "foo");
+  assert(y === 123);
 
   const status = Status.Open;
-
-  console.log(status);
+  assert(status === Status.Open);
 
   const color: Color = "red";
+  assert(color === "red");
 
-  console.log(color);
+  const fieldName: SongField = "name";
+  assert(fieldName === "name");
+
+  assert(typeof x === "string");
 };
