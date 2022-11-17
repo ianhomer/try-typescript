@@ -2,7 +2,9 @@
   "compilerOptions": {
     "outDir": "./build",
     "target": "es6",
-    "module": "CommonJS"
+    "module": "CommonJS",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": ["src/**/*.ts"]
 }
