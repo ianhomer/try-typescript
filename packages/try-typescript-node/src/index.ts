@@ -1,5 +1,8 @@
 import dotenv from "dotenv";
-import findConfig = require("find-config");
-dotenv.config({ path: findConfig(".env") });
+import findConfig from "find-config";
+
 import server from "./server";
+
+dotenv.config({ path: findConfig(".env") || undefined });
+
 server();

@@ -18,12 +18,11 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2.0.1
         with:
-          version: 6.32.1
+          version: 7.14.0 
       - name: install, build
         run: |
           pnpm install
           pnpm run update
-          pnpm run bootstrap
           pnpm test
           pnpm run build
       - name: commit update
