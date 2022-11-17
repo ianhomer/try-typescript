@@ -1,11 +1,17 @@
 {
-  "name": "root",
+  "name": "try-typescript",
+  "version": "0.0.1",
+  "description": "Try Typescript - personal katas",
+  "license": "BSD",
   "scripts": {
     "build": "pnpm --filter {packages/**} build",
+    "clean": "pnpm --filter {packages/**} clean",
     "eslint": "eslint packages --ext .ts --ext .tsx",
     "eslint:fix": "eslint packages --ext .ts --ext .tsx --fix",
     "lint": "pnpm run prettier && pnpm run eslint",
     "lint:fix": "pnpm run package:fix && pnpm run prettier:fix && pnpm run eslint:fix",
+    "main": "pnpm --filter {packages/**} main",
+    "main:build": "pnpm --filter {packages/**} main:build",
     "package:fix": "format-package -w",
     "pre-commit": "lint-staged --quiet",
     "prepare": "husky install",
