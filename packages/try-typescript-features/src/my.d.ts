@@ -9,3 +9,5 @@ declare namespace my {
 
 declare function doOverloaded(n: number): void;
 declare function doOverloaded(s: string): string;
+
+declare let thisIsAGlobalVariable: number;

@@ -7,3 +7,5 @@ doOverloaded(1);
 doOverloaded("test");
 
 my.getSomething();
+
+console.log(thisIsAGlobalVariable);
