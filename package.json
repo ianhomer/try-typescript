@@ -1,5 +1,8 @@
 {
-  "name": "root",
+  "name": "try-typescript",
+  "version": "0.0.1",
+  "description": "Try Typescript - personal katas",
+  "license": "BSD",
   "scripts": {
     "build": "pnpm --filter {packages/**} build",
     "eslint": "eslint packages --ext .ts --ext .tsx",

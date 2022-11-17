@@ -1,8 +1,8 @@
 {
   "name": "try-typescript-node",
-  "version": "1.0.0",
-  "description": "## prepare",
-  "license": "ISC",
+  "version": "0.0.1",
+  "description": "Try Typescript with Node.js",
+  "license": "BSD",
   "author": "",
   "keywords": [],
   "main": "index.js",

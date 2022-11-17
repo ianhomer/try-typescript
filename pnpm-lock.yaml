@@ -29,6 +29,12 @@ importers:
       minimist: 1.2.7
       prettier: 2.7.1
 
+  packages/try-typescript-features:
+    specifiers:
+      typescript: ^4.9.3
+    devDependencies:
+      typescript: 4.9.3
+
   packages/try-typescript-node:
     specifiers:
       "@types/body-parser": ^1.19.2
