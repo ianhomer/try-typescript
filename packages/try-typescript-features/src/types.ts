@@ -6,6 +6,8 @@ enum Status {
   InProgress = "in-progress",
 }
 
+type Color = "red" | "blue" | "yellow";
+
 export default () => {
   console.log("running types");
   const x: Varierty = "foo";
@@ -16,4 +18,8 @@ export default () => {
   const status = Status.Open;
 
   console.log(status);
+
+  const color: Color = "red";
+
+  console.log(color);
 };
