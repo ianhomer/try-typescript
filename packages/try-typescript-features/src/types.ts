@@ -18,6 +18,9 @@ interface Song {
 
 type SongField = keyof Song;
 
+// index accessed type
+type Length = Song["length"];
+
 export default () => {
   console.log("running types");
   const x: Varierty = "foo";
@@ -36,4 +39,7 @@ export default () => {
   assert(fieldName === "name");
 
   assert(typeof x === "string");
+
+  const length: Length = 123;
+  assert(length == 123);
 };
