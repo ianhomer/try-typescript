@@ -10,6 +10,8 @@
     "eslint:fix": "eslint packages --ext .ts --ext .tsx --fix",
     "lint": "pnpm run prettier && pnpm run eslint",
     "lint:fix": "pnpm run package:fix && pnpm run prettier:fix && pnpm run eslint:fix",
+    "main": "pnpm --filter {packages/**} main",
+    "main:build": "pnpm --filter {packages/**} main:build",
     "package:fix": "format-package -w",
     "pre-commit": "lint-staged --quiet",
     "prepare": "husky install",
