@@ -1,5 +1,7 @@
-import { Foo } from "./fundamentals";
+import decorators from "./decorators";
+import interfaces from "./interfaces";
+import scratch from "./scratch";
 
-const foo = new Foo("foo-name");
-
-console.log(`Foo name ${foo.name}`);
+scratch();
+interfaces();
+decorators();
