@@ -1,3 +1,5 @@
+import assert = require("node:assert");
+
 interface Nameable {
   name: string;
 }
@@ -11,6 +13,10 @@ interface Band extends Nameable {
   members: Person[];
 }
 
+type PartialBand = Partial<Band>;
+// Also Awaited, Required, Readonly, Record, Pick, Omit, Exclude, Extract,
+// NonNullable, Parameters, ConstructorParameters, ReturnType, InstanceType
+
 export default () => {
   const band: Band = {
     name: "Band 1",
@@ -20,4 +26,8 @@ export default () => {
     ],
   };
   console.log(JSON.stringify(band));
+  const partialBand: PartialBand = {
+    name: "Partial band",
+  };
+  assert(partialBand.name === "Partial band");
 };
