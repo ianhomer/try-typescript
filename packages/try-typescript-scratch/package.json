@@ -10,7 +10,8 @@
     "build": "run-s clean && run-p build:*",
     "build:main": "tsc -p tsconfig.json",
     "clean": "rimraf build test",
-    "test": "mocha -r ts-node/register ./src/{,**}/*.spec.ts"
+    "test": "mocha -r ts-node/register ./src/{,**}/*.spec.ts",
+    "test:watch": "mocha --watch --watch-files ./src/{,**}/*.ts -r ts-node/register ./src/{,**}/*.spec.ts"
   },
   "prettier": {
     "singleQuote": true
