@@ -1,5 +1,3 @@
-import assert = require('node:assert');
-
 interface Nameable {
   name: string;
 }
@@ -29,5 +27,5 @@ export default () => {
   const partialBand: PartialBand = {
     name: 'Partial band',
   };
-  assert(partialBand.name === 'Partial band');
+  console.log(partialBand.name === 'Partial band');
 };

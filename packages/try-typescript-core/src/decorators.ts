@@ -3,7 +3,7 @@ const trace = (
   property: string,
   descriptor: PropertyDescriptor
 ) => {
-  console.log(`decorating method ${property}()`);
+  console.log(`decorating method ${property}() on ${target}`);
   const wrapped = descriptor.value;
   // Extend the functionality of the method
   descriptor.value = () => {
@@ -32,7 +32,7 @@ const id = () => {
 
 class Foo {
   @id()
-  name: string;
+  name = 'foo';
 
   @trace
   async run() {
