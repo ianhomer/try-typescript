@@ -5,6 +5,7 @@
     "listEmittedFiles": false,
     "listFiles": false,
     "module": "esnext",
+    "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
