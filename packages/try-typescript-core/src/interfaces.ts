@@ -1,5 +1,3 @@
-import assert = require("node:assert");
-
 interface Nameable {
   name: string;
 }
@@ -19,15 +17,15 @@ type PartialBand = Partial<Band>;
 
 export default () => {
   const band: Band = {
-    name: "Band 1",
+    name: 'Band 1',
     members: [
-      { name: "bob", dob: new Date("01-01-1990") },
-      { name: "sue", dob: new Date("01-01-1991") },
+      { name: 'bob', dob: new Date('01-01-1990') },
+      { name: 'sue', dob: new Date('01-01-1991') },
     ],
   };
   console.log(JSON.stringify(band));
   const partialBand: PartialBand = {
-    name: "Partial band",
+    name: 'Partial band',
   };
-  assert(partialBand.name === "Partial band");
+  console.log(partialBand.name === 'Partial band');
 };

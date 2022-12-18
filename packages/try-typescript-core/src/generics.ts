@@ -4,7 +4,7 @@ function clone<T>(source: T): T {
 }
 
 export default () => {
-  console.log("running generics");
+  console.log('running generics');
   const x = clone({ a: 1, b: 2 });
   console.log(x);
   console.log(x.a);
