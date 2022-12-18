@@ -24,7 +24,7 @@ const id = () => {
       enumerable: true,
       get: () => {
         console.log(`getting ${propertyKey}`);
-        return "abc";
+        return 'abc';
       },
     });
   };
@@ -41,7 +41,7 @@ class Foo {
 }
 
 export default () => {
-  console.log("decorators");
+  console.log('decorators');
   const foo = new Foo();
   foo.run();
   console.log(`name : ${foo.name}`);
