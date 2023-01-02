@@ -30,7 +30,7 @@
   "devDependencies": {
     "@types/body-parser": "^1.19.2",
     "@types/find-config": "^1.0.1",
-    "@types/jest": "^29.2.4",
+    "@types/jest": "^29.2.5",
     "acorn": "^8.8.1",
     "dotenv": "^16.0.3",
     "find-config": "^1.0.0",
