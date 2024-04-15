@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@types/jest": "^29.5.12",
-    "@types/react": "^18.2.74",
-    "@types/react-dom": "^18.2.24",
+    "@types/react": "^18.2.78",
+    "@types/react-dom": "^18.2.25",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
@@ -19,6 +19,6 @@
   "devDependencies": {
     "cross-env": "^7.0.3",
     "enzyme": "^3.11.0",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.5"
   }
 }
