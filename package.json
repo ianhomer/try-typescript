@@ -22,9 +22,9 @@
   },
   "devDependencies": {
     "@types/node": "^20.14.10",
-    "@typescript-eslint/eslint-plugin": "^7.15.0",
-    "@typescript-eslint/parser": "^7.15.0",
-    "eslint": "^9.6.0",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "eslint": "^9.7.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "format-package": "^7.0.0",
@@ -32,6 +32,6 @@
     "lint-staged": "^15.2.7",
     "lodash": "^4.17.21",
     "minimist": "^1.2.8",
-    "prettier": "^3.3.2"
+    "prettier": "^3.3.3"
   }
 }
