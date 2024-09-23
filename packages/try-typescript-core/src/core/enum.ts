@@ -9,12 +9,12 @@ export const enum ConstEnum {
   BEZ,
 }
 
-const EnumAsConstValues = {
-  FOO: 'FOO',
-  BAR: 'BAR',
-  BEZ: 'BEZ',
-} as const;
+export type EnumAsConstValues = {
+  FOO: 'FOO';
+  BAR: 'BAR';
+  BEZ: 'BEZ';
+};
 
 type ObjectValue<T> = T[keyof T];
 
-export type EnumFromConst = ObjectValue<typeof EnumAsConstValues>;
+export type EnumFromConst = ObjectValue<EnumAsConstValues>;

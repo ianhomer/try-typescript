@@ -28,11 +28,7 @@ jobs:
           version: 9.x
       - name: install
         run: pnpm install
-      - name: main
-        run: pnpm main
       - name: build
         run: pnpm run build
       - name: test
         run: pnpm test
-      - name: main:build
-        run: pnpm run main:build

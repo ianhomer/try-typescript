@@ -6,12 +6,11 @@
   "scripts": {
     "build": "pnpm --filter {packages/**} build",
     "clean": "pnpm --filter {packages/**} clean",
-    "eslint": "ESLINT_USE_FLAT_CONFIG=false eslint packages --ext .ts --ext .tsx",
-    "eslint:fix": "ESLINT_USE_FLAT_CONFIG=false eslint packages --ext .ts --ext .tsx --fix",
+    "eslint": "eslint packages",
+    "eslint:fix": "eslint packages --ext .ts --ext .tsx --fix",
     "lint": "pnpm run prettier && pnpm run eslint",
     "lint:fix": "pnpm run package:fix && pnpm run prettier:fix && pnpm run eslint:fix",
-    "main": "pnpm --filter {packages/**} main",
-    "main:build": "pnpm --filter {packages/**} main:build",
+    "start": "pnpm --filter {packages/**} start",
     "package:fix": "format-package -w",
     "pre-commit": "lint-staged --quiet",
     "prepare": "husky",
@@ -21,6 +20,8 @@
     "update": "pnpm update -rL"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.11.0",
     "@types/node": "^22.5.5",
     "@typescript-eslint/eslint-plugin": "^8.6.0",
     "@typescript-eslint/parser": "^8.6.0",
@@ -28,6 +29,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "format-package": "^7.0.0",
+    "globals": "^15.9.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "lodash": "^4.17.21",
