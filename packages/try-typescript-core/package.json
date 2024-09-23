@@ -5,8 +5,8 @@
   "license": "BSD",
   "author": "",
   "keywords": [],
-  "main": "src/index.ts",
   "type": "module",
+  "main": "src/index.ts",
   "scripts": {
     "build": "pnpm clean && pnpm build:main",
     "build:main": "tsc -p tsconfig.json",
