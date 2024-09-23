@@ -6,6 +6,7 @@
   "author": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "cross-env CI=true react-scripts test --ci"
   },
   "dependencies": {
@@ -19,6 +20,8 @@
   "devDependencies": {
     "cross-env": "^7.0.3",
     "enzyme": "^3.11.0",
-    "typescript": "^5.6.2"
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.2",
+    "webpack-cli": "^5.1.4"
   }
 }
