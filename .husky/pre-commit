@@ -1,2 +1,2 @@
-ESLINT_USE_FLAT_CONFIG=false pnpm lint-staged
+pnpm lint-staged
 pnpm test

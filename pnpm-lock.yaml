@@ -7,6 +7,12 @@ settings:
 importers:
   .:
     devDependencies:
+      "@eslint/eslintrc":
+        specifier: ^3.1.0
+        version: 3.1.0
+      "@eslint/js":
+        specifier: ^9.11.0
+        version: 9.11.0
       "@types/node":
         specifier: ^22.5.5
         version: 22.5.5
@@ -28,6 +34,9 @@ importers:
       format-package:
         specifier: ^7.0.0
         version: 7.0.0(prettier@3.3.3)
+      globals:
+        specifier: ^15.9.0
+        version: 15.9.0
       husky:
         specifier: ^9.1.6
         version: 9.1.6
@@ -5426,6 +5435,13 @@ packages:
     resolution:
       {
         integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==,
+      }
+    engines: { node: ">=18" }
+
+  globals@15.9.0:
+    resolution:
+      {
+        integrity: sha512-SmSKyLLKFbSr6rptvP8izbyxJL4ILwqO9Jg23UA0sDlGlu58V59D1//I3vlc0KJphVdUR7vMjHIplYnzBxorQA==,
       }
     engines: { node: ">=18" }
 
@@ -14775,6 +14791,8 @@ snapshots:
   globals@11.12.0: {}
 
   globals@14.0.0: {}
+
+  globals@15.9.0: {}
 
   globalthis@1.0.4:
     dependencies:

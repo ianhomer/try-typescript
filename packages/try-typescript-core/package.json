@@ -10,7 +10,7 @@
   "scripts": {
     "build": "pnpm clean && pnpm build:main",
     "build:main": "tsc -p tsconfig.json",
-    "clean": "rimraf build test",
+    "clean": "rimraf build test dist",
     "test": "jest --no-watchman",
     "test:watch": "jest --watch"
   },

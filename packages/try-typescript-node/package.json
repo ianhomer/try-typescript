@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "clean": "rimraf build",
+    "clean": "rimraf build dist",
     "format": "prettier --write 'src/**/*.{ts}'",
     "lint": "eslint --ext ts,tsx ./src",
     "lint:fix": "eslint --ext ts,tsx ./src --fix",
