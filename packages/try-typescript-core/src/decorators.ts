@@ -1,7 +1,7 @@
 const trace = (
   target: any,
   property: string,
-  descriptor: PropertyDescriptor
+  descriptor: PropertyDescriptor,
 ) => {
   console.log(`decorating method ${property}() on ${target}`);
   const wrapped = descriptor.value;
@@ -11,7 +11,7 @@ const trace = (
     console.log(`trace start : ${property}`);
     const result = wrapped.apply(this);
     console.log(
-      `trace end : ${property} : ${new Date().getUTCMilliseconds() - start}ms`
+      `trace end : ${property} : ${new Date().getUTCMilliseconds() - start}ms`,
     );
     return result;
   };
