@@ -1,7 +1,6 @@
 const config = {
-  testEnvironment: 'jsdom',
-  testMatch: ['**/*.test.tsx'],
+  testEnvironment: "jsdom",
+  testMatch: ["**/*.test.tsx"],
 };
 
 module.exports = config;
-
