@@ -20,21 +20,21 @@
     "update": "pnpm update -rL"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.2.3",
+    "@eslint/compat": "^1.2.6",
     "@eslint/eslintrc": "^3.2.0",
-    "@eslint/js": "^9.16.0",
-    "@types/node": "^22.10.1",
-    "@typescript-eslint/eslint-plugin": "^8.16.0",
-    "@typescript-eslint/parser": "^8.16.0",
-    "eslint": "^9.16.0",
+    "@eslint/js": "^9.19.0",
+    "@types/node": "^22.13.0",
+    "@typescript-eslint/eslint-plugin": "^8.23.0",
+    "@typescript-eslint/parser": "^8.23.0",
+    "eslint": "^9.19.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "format-package": "^7.0.0",
-    "globals": "^15.13.0",
+    "globals": "^15.14.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.10",
+    "lint-staged": "^15.4.3",
     "lodash": "^4.17.21",
     "minimist": "^1.2.8",
-    "prettier": "^3.4.1"
+    "prettier": "^3.4.2"
   }
 }
