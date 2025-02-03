@@ -1,9 +1,9 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as ReactDOM from "react-dom/client";
 
 import Hello from "./components/Hello";
 
-ReactDOM.render(
-  <Hello compiler="TypeScript" framework="React" />,
-  document.getElementById("example"),
+const root = ReactDOM.createRoot(
+  document.getElementById("example") as HTMLElement,
 );
+root.render(<Hello compiler="TypeScript" framework="React" />);
